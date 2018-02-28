@@ -1,0 +1,71 @@
+<div id="altaCita">
+  <form class="form-horizontal" id="frmAltaCita" name="frmAltaCita">
+      <fieldset>
+      
+      <!-- Form Name -->
+      <legend>Alta cita</legend>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtIDCita">ID cita: </label>  
+        <div class="col-md-2">
+        <input id="txtIDCita" name="txtIDCita" type="text" placeholder="" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="comboDNIPaciente">DNI paciente:</label>
+        <div class="col-md-5">
+          <select id="comboDNIPaciente" name="comboDNIPaciente" class="form-control">
+          </select>
+        </div>
+      </div>
+      
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="comboDNIMedico">Número Colegiado:</label>
+        <div class="col-md-5">
+          <select id="comboNUMMedico" name="comboNUMMedico" class="form-control">
+          </select>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtFecha">Fecha:</label>  
+        <div class="col-md-5">
+        <input id="txtFecha" name="txtFecha" type="date" placeholder="" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtHora">Hora:</label>  
+        <div class="col-md-5">
+        <input id="txtHora" name="txtHora" type="time" placeholder="" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="txtDescripcion">Descripción:</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="txtDescripcion" name="txtDescripcion"></textarea>
+        </div>
+      </div>
+      
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="btnAceptarAltaCita"></label>
+        <div class="col-md-4">
+          <input type="button" id="btnAceptarAltaCita" name="btnAceptarAltaCita" class="btn btn-info" value="Aceptar"/>
+        </div>
+      </div>
+      
+      </fieldset>
+    </form>
+</div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>San Piter's Hospital</title>
+        <style type="text/css">
+            .jumbotron{
+                background-image: url("imagenes/hospital.jpg");
+                background-color: #7fc7c3;
+                color: white;
+            }
+            .btn-group-justified button{
+                background-color: #7397c0;
+                color: white;
+                margin-top: -10%
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 align=center><b>San Piter's Hospital</b></h1>      
+            <p align=center>San Piter's Hospital está situado a pocos kilómetros de la ciudad de Sevilla, en la localidad de Dos Hermanas. Dispone de todas las especialidades médico quirúrgicas y de la más avanzada tecnología.</p>
+        </div>
+            
+        <div class="container">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnPaciente">Paciente<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaPaciente">Alta</a></li>
+                    <li><a href="#" id="btnModificaPaciente">Modificar</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnMedico">Médico<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaMedico">Alta</a></li>
+                    <li><a href="#" id="btnModificaMedico">Modificar</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnCita">Cita<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaCita">Crear</a></li>
+                    <li><a href="#" id="btnModificaCita">Anular</a></li>
+                  </ul>
+                </div>
+               
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnPrueba">Prueba médica<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaPrueba">Crear</a></li>
+                    <li><a href="#" id="btnModificaPrueba">Modificar</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnAmbulancia">Ambulancia<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaAmbulancia">Alta</a></li>
+                    <li><a href="#" id="btnModificaAmbulancia">Modificar</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnTratamiento">Tratamiento<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnAltaTratamiento">Crear</a></li>
+                    <li><a href="#" id="btnModificaTratamiento">Modificar</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btnListados">Listados<span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" style="background-color: #94B2D4;">
+                    <li><a href="#" id="btnListadoPacientes">Listado pacientes</a></li>
+                    <li><a href="#" id="btnListadoMedicos">Listado médicos</a></li>
+                    <li><a href="#" id="btnListadoCitasPorMedicos">Listado citas por médicos</a></li>
+                    <li><a href="#" id="btnListadoPruebas">Listado Pruebas médicas existentes</a></li>
+                    <li><a href="#" id="btnListadoAmbulancias">Listado ambulancias</a></li>
+                    <li><a href="#" id="btnListadoTratamientos">Listado Tratamientos por pacientes</a></li>
+                    <!--MODIFICADO 20/01   "Para hacer prueba de alta cita"-->
+                    <li><a href="#" id="btnListadoCitas">Listado Citas</a></li>
+                  </ul>
+                </div>
+            </div>
+            
+          <div id="formularios"></div>
+          <div id="listados"></div>
+
+        </div>
+        <!--<script type="text/javascript" src="js/codigo.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/objetos.js"></script>
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>        
+    </body>
+</html>
